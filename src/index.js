@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ColorModeScript, ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import App from "./App";
 import { providers } from "ethers";
 import { Provider as WagmiProvider, defaultChains } from "wagmi";
@@ -15,13 +15,19 @@ const connector = [
   })
 ]
 
+const config = {
+  useSystemColorMode: false,
+  initialColorMode: "dark",
+}
+
+const customTheme = extendTheme({ config })
+
 
 ReactDOM.render(
   <React.StrictMode>
     <WagmiProvider  provider={provider} connectors={connector}>
       <AccountProvider>
-          <ChakraProvider>
-            <ColorModeScript initialColorMode="light"></ColorModeScript>
+          <ChakraProvider theme={customTheme}>
             <App />
           </ChakraProvider>
       </AccountProvider>
