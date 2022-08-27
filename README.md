@@ -12,3 +12,4 @@ REACT_APP_THETIC_KEY=
 
 ```
 
+<img src="/thentic-demo.png" width="970">
