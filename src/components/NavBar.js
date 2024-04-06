@@ -28,8 +28,8 @@ const NavBar = () => {
   return (
     <VStack p={3}>
       <Flex w="100%">
-        <Box w="100%" p={4} color="white">
-            Thentic NFT Manager Dapp
+        <Box w="100%" p={4} color="white" fontSize="50px">
+            NFT Manager Dapp
         </Box>
         <Spacer />
         <Box p={5}>

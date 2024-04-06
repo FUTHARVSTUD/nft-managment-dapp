@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const BASE_URI = "https://thentic.tech/api";
 const API_KEY = process.env.REACT_APP_THETIC_KEY;
-const CHAIN = 80001;
+const CHAIN = 7;
 const useTheticApi = () => {    
     const createContract = async (postData) => {
         try {

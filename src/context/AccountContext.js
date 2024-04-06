@@ -84,8 +84,8 @@ export const AccountProvider = ({ children }) => {
 
 function getSupportedNetworks(chainId){
   const networks = {
-    80001: "Mumbai",
-    '0x13881': "Mumbai"
+    7: "SamarthkaChain",
+    '0x8db97': "SamarthkaChain"
   };
   return networks[chainId];
 }
