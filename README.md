@@ -1,6 +1,3 @@
-# Thentic-Demo  https://thentic-nft-manager.vercel.app/
-
-
 add .env 
 npm install
 npm start
